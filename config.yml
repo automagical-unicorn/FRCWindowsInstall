@@ -1,0 +1,25 @@
+packages:
+    FRCGameTools:
+        downloadURL: https://download.ni.com/support/nipkg/products/ni-f/ni-frc-2020-game-tools/19.0/online/ni-frc-2020-game-tools_19.0_online.exe
+        fileName: ni-frc-2020-game-tools_19.0_online.exe
+        installation: 
+            installationType: run
+    PhoenixAPIZip:
+        downloadURL: https://github.com/CrossTheRoadElec/Phoenix-Releases/releases/download/v5.17.4.0/CTRE.Phoenix.Framework.v5.17.4.0.zip
+        fileName: CTRE.Phoenix.Framework.v5.17.4.0.zip
+        installation: 
+            installationType: unzip
+            destinationPath: ./downloads     
+    PhoenixAPI:
+        downloadURL: None
+        fileName: CTRE Phoenix Framework v5.17.4.0.exe
+        installation:
+            installationType: run
+    SparkMax:
+        downloadURL: http://www.revrobotics.com/content/sw/max/client/spark-max-client-setup-2.1.1.exe
+        fileName: spark-max-client-setup-2.1.1.exe
+        installation:
+            installationType: run
+
+    
+           
