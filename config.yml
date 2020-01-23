@@ -20,6 +20,16 @@ packages:
         fileName: spark-max-client-setup-2.1.1.exe
         installation:
             installationType: run
+    WPILibZip:
+        fileName: WPILibInstaller_Windows64-2020.2.2.zip
+        installation:
+            installationType: unzip
+            destinationPath: ./downloads
+    WPILib:
+        downloadURL: None
+        fileName: WPILibInstaller_Windows64-2020.2.2
+        installation:
+            installationType: run
 
     
            
