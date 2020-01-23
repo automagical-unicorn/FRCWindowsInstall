@@ -9,6 +9,7 @@ What is included:
 * FRC Game Tools 2020
 * Phoenix API
 * Spark Max
+* WPILib
 
 Before you start:
 * Use Ethernet or a faster WiFi 

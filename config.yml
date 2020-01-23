@@ -21,6 +21,7 @@ packages:
         installation:
             installationType: run
     WPILibZip:
+        downloadURL: https://github.com/wpilibsuite/allwpilib/releases/download/v2020.2.2/WPILibInstaller_Windows64-2020.2.2.zip
         fileName: WPILibInstaller_Windows64-2020.2.2.zip
         installation:
             installationType: unzip
