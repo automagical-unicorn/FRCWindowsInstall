@@ -10,6 +10,9 @@ What is included:
 * Phoenix API
 * Spark Max
 
+Before you start:
+* Use Ethernet or a faster WiFi 
+
 How to install:
 * Start PowerShell with "Run as administrator"
 * Run ./FRCWindowsInstall.ps1
