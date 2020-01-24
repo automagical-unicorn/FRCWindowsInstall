@@ -36,8 +36,11 @@ foreach ($p in $packages)
 		}
 		"unzip"
 		{
-			Write-Host "unpacking" $fileName "to" $package.installation.destinationPath
-			Expand-Archive -LiteralPath $fileName -DestinationPath $package.installation.destinationPath -Force
+			if (!(test-Path (Join-Path -Path $downloadsPath\ -ChildPath $package.installation.checkExists)))
+			{
+				Write-Host "unpacking" $fileName "to" $package.installation.destinationPath
+				Expand-Archive -LiteralPath $fileName -DestinationPath $package.installation.destinationPath -Force
+			}
 		}
 	}
 }

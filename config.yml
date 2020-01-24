@@ -9,7 +9,8 @@ packages:
         fileName: CTRE.Phoenix.Framework.v5.17.4.0.zip
         installation: 
             installationType: unzip
-            destinationPath: ./downloads     
+            destinationPath: ./downloads
+            checkExists: CTRE Phoenix Framework v5.17.4.0.exe            
     PhoenixAPI:
         downloadURL: None
         fileName: CTRE Phoenix Framework v5.17.4.0.exe
@@ -26,6 +27,7 @@ packages:
         installation:
             installationType: unzip
             destinationPath: ./downloads
+            checkExists: WPILibInstaller_Windows64-2020.2.2.exe
     WPILib:
         downloadURL: None
         fileName: WPILibInstaller_Windows64-2020.2.2
