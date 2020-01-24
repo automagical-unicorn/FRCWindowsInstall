@@ -31,6 +31,10 @@ packages:
         fileName: WPILibInstaller_Windows64-2020.2.2
         installation:
             installationType: run
-
+    GitForWindows:
+        downloadURL: https://github.com/git-for-windows/git/releases/download/v2.25.0.windows.1/Git-2.25.0-64-bit.exe
+        fileName: Git-2.25.0-64-bit.exe
+        installation:
+            installationType: run
     
            
