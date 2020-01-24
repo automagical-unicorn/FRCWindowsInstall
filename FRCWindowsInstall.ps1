@@ -3,7 +3,7 @@ if (-Not (Get-Module -ListAvailable -Name powershell-yaml))
 {
 	Install-Module -Name powershell-yaml -Force -Repository PSGallery -Scope CurrentUser
 }
-$downloadsPath = ".\downloads"
+$downloadsPath = Join-Path -Path (Get-Location) -ChildPath "downloads"
 if(!(test-path $downloadsPath))
 {
 	Write-Host "Creating directory " $downloadsPath
@@ -12,6 +12,7 @@ if(!(test-path $downloadsPath))
 #read configuration file
 $fileContent = Get-Content -Raw ".\config.yml"
 $ymlConfig = (ConvertFrom-Yaml -Yaml $fileContent -Ordered)
+$wc = New-Object net.webclient
 
 $packages = $ymlConfig.packages.GetEnumerator()
 
@@ -22,8 +23,9 @@ foreach ($p in $packages)
 	$fileName = Join-Path -Path $downloadsPath\ -ChildPath $package.fileName
 	if (!((test-path $fileName) -Or ($package.downloadURL -Eq "None")))
 	{
-		Write-Host "Downloading $fileName"
-		Invoke-WebRequest -Uri $package.downloadURL -OutFile $fileName
+		Write-Host "Downloading $fileName from"
+		Write-Host $package.downloadURL
+		$wc.Downloadfile($package.downloadURL, $fileName)
 	}
 	switch ($package.installation.installationType)
 	{
