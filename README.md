@@ -10,6 +10,7 @@ What is included:
 * Phoenix API
 * Spark Max
 * WPILib
+* Git for Windows (aka GitBash)
 
 Before you start:
 * Use Ethernet or a faster WiFi 
