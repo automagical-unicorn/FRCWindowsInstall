@@ -50,3 +50,8 @@ packages:
         fileName: FRC_Radio_Configuration_20_0_0.exe
         installation:
             installationType: run
+    OBSStudio:
+        downloadURL: https://cdn-fastly.obsproject.com/downloads/OBS-Studio-24.0.3-Full-Installer-x64.exe
+        fileName: OBS-Studio-24.0.3-Full-Installer-x64.exe
+        installation:
+            installationType: run
