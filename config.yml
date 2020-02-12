@@ -38,5 +38,17 @@ packages:
         fileName: Git-2.25.0-64-bit.exe
         installation:
             installationType: run
+    FRCRadioZip:
+        downloadURL: https://firstfrc.blob.core.windows.net/frc2020/Radio/FRC_Radio_Configuration_20_0_0.zip
+        fileName: FRC_Radio_Configuration_20_0_0.zip
+        installation:
+            installationType: unzip
+            destinationPath: ./downloads
+            checkExists: FRC_Radio_Configuration_20_0_0.exe
+    FRCRadio:
+        downloadURL: None
+        fileName: FRC_Radio_Configuration_20_0_0.exe
+        installation:
+            installationPath: run
     
            
