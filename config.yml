@@ -49,6 +49,4 @@ packages:
         downloadURL: None
         fileName: FRC_Radio_Configuration_20_0_0.exe
         installation:
-            installationPath: run
-    
-           
+            installationType: run
