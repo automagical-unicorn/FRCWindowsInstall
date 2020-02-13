@@ -31,8 +31,10 @@ foreach ($p in $packages)
 	{
 		"run"
 		{
-			Write-Host "Installing $fileName"
-			Start-Process $fileName -NoNewWindow -Wait
+			if ((Read-Host "Installing $fileName. Press Y to continue or anything else to skip").ToUpper() -eq  'Y')
+			{
+				Start-Process $fileName -NoNewWindow -Wait
+			}
 		}
 		"unzip"
 		{
