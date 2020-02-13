@@ -18,7 +18,7 @@ Before you start:
 How to install:
 * Start PowerShell with "Run as administrator"
 * Run ./FRCWindowsInstall.ps1
-* if you get an error saying that your "script cannot be loaded because runnin scripts is disabled on this system", change your execution policy with Set-Execution-Policy -ExecutionPolicy Unrestricted
+* if you get an error saying that your "script cannot be loaded because running scripts is disabled on this system", change your execution policy with Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 * Do not restart when FRC Game Tools asks you too. Wait until the end and restart when everything is done
 * Do not forget to check "Install VSCode" as part of the WPILib 
 
